@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: spac; */
+    padding: 15px 20px;
+    color: white;
+    animation: header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.content{
+    width: 50%;
+    color: white;
+    margin-top: 8%;
+    margin-left: 5%;
+    overflow: hidden;
+    animation: content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+.content h1{
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 5px;
+}
+.content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content span{
+    color: red;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    padding: 15px 20px;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+}
+button:hover{
+    background: red;
+}
+.background{
+    width: 50%;
+    margin-top: 8%;
+    z-index: -1;
+}
+
+.background img{
+    width: 40rem;
+    animation: background 5s ease-in-out;
+}
+@keyframes background{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-220%);
+    }
+}
+@media screen and (max-width:1200px){
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .background{
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+        display: flex;
+        justify-content: center;
+    }
+    .background img{
+        width: 20rem;
+    }
+}
+@media screen and (max-width:576px){
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .content h1,h3{
+        margin-bottom: 5%;
+    }
+    .background{
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+        display: flex;
+        justify-content: center;
+    }
+    .background img{
+        width: 10rem;
+    }
+}

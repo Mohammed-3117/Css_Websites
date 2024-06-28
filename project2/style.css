@@ -1,0 +1,108 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  #navbar{
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    width: 100%;
+    background: blue;
+    padding: .5rem 5rem;
+  }
+  #navbar .navbar-brand{
+    font-size: 25px;
+    line-height: 70px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+  }
+  #navbar .navbar-brand:hover{
+    font-size: 28px;
+    line-height: 70px;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, .5);
+  }
+
+  #navbarSupportedContent a{
+    color: white;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+  }
+  #navbarSupportedContent a:hover{
+    border-bottom: 2px solid red;
+    transition: .2s;
+  }
+  .design{
+    background: red;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    font-weight: 700;
+  }
+  .design:hover{
+    background-color: green;
+    transition: 2s;
+    color: white;
+    border: 1px solid white;
+  }
+
+  section{
+    min-height: 100vh;
+  }
+  #home{
+    background: url(images/igor-karimov-9AmKnNZw3GA-unsplash.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #home h1{
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
+    float: right;
+    margin-top: 20vh;
+    margin-right: 10vh;
+  }
+  #home p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  #btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: aqua;
+    margin: 0 auto;
+  }
+  .card{
+    height: 310px;
+    margin: 10px 0px;
+  }
+  .card img{
+    height: 200px;
+  }
+  #products{
+    background: #e5e5e5;
+  }
+  #contact input{
+    margin: 10px 0px;
+  }
+  #contact textarea{
+    margin: 10px 0px;
+  }
+  #contact button{
+
+  }
